@@ -27,3 +27,34 @@ a {
     color: var(--black);
     margin: 1em;
 }
+
+nav {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 10%;
+    gap: 20%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    font-weight: 700;
+}   
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+input {
+    background: transparent;
+    padding: 8px;
+    font-size: 1em;
+    outline: none;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 2px solid var(--black);
+}
