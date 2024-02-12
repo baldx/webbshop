@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import './css/App.css'
 import Header from './components/header'
+import NavBarItems from './components/navbar'
+import SearchBar from './components/searchBar'
 
 function App() {
 
@@ -9,6 +11,10 @@ function App() {
       <header>
         <Header />
       </header>
+      <nav>
+        <NavBarItems />
+        <SearchBar />
+      </nav>
     </>
   )
 }
