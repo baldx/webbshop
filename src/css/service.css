@@ -1,0 +1,74 @@
+:root {
+  --black: rgb(24, 22, 22);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+  height: 100vh;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.centerbox {
+  display: flex;
+  justify-content: center;
+  border: solid black 1px;
+  border-radius: 3px;
+  height: 40vh;
+  margin-left: 25vw;
+  margin-right: 25vw;
+}
+
+.centerboxspace {
+  margin-top: 15px;
+}
+.centerboxspace2{
+  margin-top: 50px;
+}
+
+.filloutform{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    border: solid black 1.5px;
+    height: 6vh;
+    margin-top: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  height: 15vh;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0em 1em;
+  font-size: 1.6em;
+  font-weight: 700;
+}
+
+a {
+  color: var(--black);
+  margin: 1em;
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 1em;
+}
+
+.logo {
+  width: 100px;
+  height: 80%;
+  background: blue;
+}
