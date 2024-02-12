@@ -1,0 +1,46 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    height: 100vh;
+}´
+
+/*header*/
+
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 1em;
+}
+
+.logo {
+    width: 100px;
+    height: 80%;
+    background: blue;
+}
+
+header {
+    display: flex;
+    height: 15vh;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.6em;
+    font-weight: 700;
+}
+
+a {
+    color: var(--black);
+    margin: 1em;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+}
+
+.image-bg {
+    justify-content: center;
+    display: flex;
+}
