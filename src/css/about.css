@@ -53,4 +53,12 @@ a {
     justify-content: center;
     display: flex;
     width: 100vw;
+    height: 500px;
+    object-fit: none;
+}
+
+img {
+    width: 100vw;
+    object-position: 50% 95%;
+    object-fit: cover;
 }
