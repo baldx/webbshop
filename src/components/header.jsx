@@ -3,7 +3,7 @@ export default function Header() {
     <>
       <div className="left">
         <img src="" alt="" className="logo" />
-        <div className="title-logo">Devine Desires</div>
+        <div className="title-logo">Divine Desires</div>
       </div>
       <div className="right">
         <a href="#">About</a>
