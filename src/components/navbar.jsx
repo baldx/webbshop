@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const categories = [
     {
         name: 'Jewelry',
@@ -29,22 +31,48 @@ const categories = [
     }
 ];
 
+
+
 export default function NavBarItems () {
-    // console.log(categories[0].items[0])
+    
+    const [showSubcategories, setShowSubcategories] = useState(null);
+
+    const handleMouseEnter = (categoryName) => {
+        setShowSubcategories(categoryName);
+    };
+
+    const handleMouseLeave = () => {
+        setShowSubcategories(null);
+    };
+    	
+
+    const displayItems = () => {
+        return (
+            <>
+
+            </>
+        )
+    }
+
     return (
         <>
-            <ul className="category">
             {categories.map(category => (
-                <div className="item-container">
-                    <div className="category-name">{category.name}</div>
-                    {/* <ul>
-                        {category.items.map(item => (
-                            <li><a href="#">{item}</a></li>
-                        ))}
-                    </ul> */}
-                </div>
+                <ul
+                    key={category.name}
+                    onMouseEnter={() => handleMouseEnter(category.name)}
+                    onMouseLeave={handleMouseLeave}
+                    style={{ position: 'relative' }}
+                >
+                    <h2>{category.name}</h2>
+                    {showSubcategories === category.name && (
+                        <div style={{ position: 'absolute', top: '100%', left: 0, backgroundColor: 'white', padding: '5px', border: '1px solid #ccc' }}>
+                            {category.items.map(item => (
+                                <div key={item}>{item}</div>
+                            ))}
+                        </div>
+                    )}
+                </ul> 
             ))}
-            </ul>
         </>
     )
 }
