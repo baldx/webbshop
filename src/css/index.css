@@ -58,3 +58,12 @@ input {
     border-top: none;
     border-bottom: 2px solid var(--black);
 }
+
+hr {
+    width: 90%;
+    background: var(--black);
+}
+
+ul li {
+    list-style-type: none;
+}
