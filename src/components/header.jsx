@@ -6,7 +6,7 @@ export default function Header() {
         <div className="title-logo">Divine Desires</div>
       </div>
       <div className="right">
-        <a href="#">About</a>
+        <a href="#">About Us</a>
         <a href="#">Contact</a>
       </div>
     </>
