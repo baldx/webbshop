@@ -11,6 +11,7 @@ function App() {
       <header>
         <Header />
       </header>
+      <hr />
       <nav>
         <NavBarItems />
         <SearchBar />
