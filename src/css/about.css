@@ -50,7 +50,7 @@ a {
     height: 100vh;
 }
 
-.image-bg{
+.image-bg {
     justify-content: center;
     display: flex;
     width: 100vw;
@@ -59,12 +59,11 @@ a {
 }
 
 
-.mainImage{
+.mainImage {
     width: 100vw;
     object-position: 50% 95%;
     object-fit: cover;
 }
-
 
 .imgHeading {
     position: absolute;
@@ -100,7 +99,7 @@ span {
     width: 30vw;
 }
 
-.funFacts{
+.funFacts {
     padding-top: 1%;
     background-color: #FAF9F6;
     margin-top:16%;
@@ -109,13 +108,13 @@ span {
     border: 8px;
 }
 
-.factsHeader{
+.factsHeader {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.facts{
+.facts {
     margin-left: 3%;
     margin-right: 6%;
     display: flex;
@@ -124,15 +123,15 @@ span {
     justify-content: space-between;
 }
 
-.factsContainer{
+.factsContainer {
     width: 100vw;
 }
 
-.factImages{
+.factImages {
     width: 20vw;
     height: 20vh;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: center; 
     justify-content: space-between;
 }
