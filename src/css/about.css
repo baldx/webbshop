@@ -103,7 +103,7 @@ span {
     padding-top: 1%;
     background-color: #FAF9F6;
     margin-top:16%;
-    height: 100vh;
+    height: 50vh;
     width: 100vw;
     border: 8px;
 }
@@ -115,23 +115,70 @@ span {
 }
 
 .facts {
-    margin-left: 3%;
-    margin-right: 6%;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+}
+
+.Uncentered{
+    margin-left: 2%;
 }
 
 .factsContainer {
-    width: 100vw;
+    width: 100vw;   
+    display: flex;
 }
 
 .factImages {
     width: 20vw;
     height: 20vh;
-    display: flex;
     flex-direction: row;
-    align-items: center; 
-    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 1024px){
+
+    span {
+        width: 80vw;
+    }
+    .facts {
+        font-size: 13px;
+    }
+
+    .funFacts {
+        margin-top: 2%;
+    }
+}
+
+@media screen and (max-width: 780px){
+
+    span {
+        width: 80vw;
+    }
+    .facts {
+        font-size: 13px;
+    }
+
+    .funFacts {
+        margin-top: 2%;
+    }
+    .imgText{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 450px){
+
+    span {
+        width: 90vw;
+    }
+    .facts {
+        font-size: 8px;
+    }
+
+    .funFacts {
+        margin-top: 2%;
+    }
+    .factImages{
+        width: 20vw;
+        object-fit: cover;
+    }
 }
