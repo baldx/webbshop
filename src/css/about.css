@@ -98,9 +98,31 @@ span {
     width: 30vw;
 }
 
-.facts{
-    background-color: burlywood;
-    margin-top:8%;
+.funFacts{
+    padding-top: 1%;
+    background-color: #FAF9F6;
+    margin-top:7%;
     height: 40vh;
     width: 100vw;
+    border: 8px;
+}
+
+.factsHeader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.facts{
+    margin-left: 3%;
+    margin-right: 6%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.factImages{
+    width: 500px;
+    height: 300px;
 }
