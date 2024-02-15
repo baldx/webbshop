@@ -6,6 +6,7 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 0px;
   height: 100vh;
+  overflow-x: hidden;
 }
 
 .center {
@@ -13,30 +14,20 @@ body {
   justify-content: center;
 }
 
-.centerbox {
-  display: flex;
-  justify-content: center;
-  border: solid black 1px;
-  border-radius: 3px;
-  height: 40vh;
-  margin-left: 25vw;
-  margin-right: 25vw;
-}
-
 .centerboxspace {
-  margin-top: 15px;
+  margin-top: 1%;
 }
-.centerboxspace2{
-  margin-top: 50px;
+.centerboxspace2 {
+  margin-top: 5%;
 }
 
-.filloutform{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    border: solid black 1.5px;
-    height: 6vh;
-    margin-top: 10px;
+.filloutform {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  border: solid black 1.5px;
+  height: 6vh;
+  margin-top: 10px;
 }
 
 * {
@@ -73,6 +64,134 @@ a {
   background: blue;
 }
 
-hr{
-    width: 90%;
+hr {
+  width: 90%;
+}
+/*Tar bort den svarta linjen run om min form*/
+fieldset {
+  border: none;
+  padding: 0px;
+}
+/*En enkel margin*/
+label {
+  margin-bottom: 5px;
+}
+
+/*Style till knappen och själva formen.*/
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: none;
+  border-color: #ccc;
+  border-radius: 5px;
+  padding: 8px;
+  width: 100%;
+}
+
+button {
+  padding: 10px 20px;
+  background-image: linear-gradient(
+    45deg,
+    #a67c00 0%,
+    #ffbf00 30%,
+    #ffdc73 35%,
+    #ffbf00 70%,
+    #ffbf00 0%,
+    #a67c00 1000%
+  );
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* Style och hover effekt till anchors*/
+a:hover {
+  color: #ffa500;
+}
+/* Style till center box AKA formen*/
+.centerbox {
+  display: flex;
+  justify-content: center;
+  border: solid black 1px;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 45vw;
+}
+
+/*En fin liten container som det ligger sqaures i med flex center så att de är i mitten*/
+.faq-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/*Utessendet på själva sqauren,*/
+.faq {
+  font-size: 1.2em;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.faq:hover {
+  background-color: #000000;
+}
+/* Tar bort den fula linjen under anchors. */
+a {
+  text-decoration: none;
+}
+
+/* Style for the delivery facts section */
+.faqGG {
+  display: flex;
+  justify-content: center;
+}
+.faqText {
+  display: flex;
+  justify-content: center;
+  margin-left: 25vw;
+  margin-right: 25vw;
+}
+
+li {
+  margin-top: 2vh;
+}
+
+.scroll-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ffbf00;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+.scroll-top-show {
+  display: block; /* Show the button when needed */
+}
+
+/*Responsivitet*/
+@media screen and (max-width: 790px) {
+  .centerbox {
+    max-width: 90vw;
+  }
+  .faqText {
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+}
+@media screen and (max-width: 320px) {
+  .centerbox {
+    max-width: 90vw;
+  }
 }

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/service.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>CustomerService</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="left">
+          <img src="./src/assets/JewelryLogo.png" alt="" class="logo" />
+          <div class="title-logo">Divine Desires &copy;</div>
+        </div>
+
+        <div class="right">
+          <a href="./about.html">About</a>
+          <a href="./index.html">Home</a>
+        </div>
+      </header>
+      <hr />
+      <div class="center">Hello and Welcome to our Customer Service</div>
+      <div class="center">How can we help you?</div>
+
+      <div class="center">Below We have some Frequently asked questions</div>
+
+      <div class="faq-container">
+        <a href="#f1" class="faq">I Have a question</a>
+        <a href="#f2" class="faq">Order Delivery</a>
+        <a href="#f3" class="faq">Return Policy</a>
+        <a href="#f4" class="faq">Payment</a>
+        <a href="#f5" class="faq">Shipping</a>
+      </div>
+      <section id="f1">
+        <div class="centerbox">
+          <div>
+            <strong class="center"
+              >If you have any questions make sure to fill out the form!</strong
+            >
+            <div class="centerboxspace"></div>
+            <div class="center">
+              Please add in your details in the form down Below
+            </div>
+            <div class="centerboxspace2"></div>
+            <form>
+              <fieldset>
+                <legend>Contact Details</legend>
+                <label for="name">Name:</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="First and Last name"
+                />
+                <label for="email">Email:</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="example@gmail.com"
+                />
+                <label for="Message">Message:</label>
+                <textarea
+                  rows="3"
+                  cols="86"
+                  placeholder="Write your Message here..."
+                ></textarea>
+              </fieldset>
+            </form>
+            <button onclick="clicked()" id="submitButton">Sumbit</button>
+            <img
+              src="./src/assets/forward_to_inbox_FILL0_wght400_GRAD0_opsz24.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+      <section id="f2">
+        <div class="faqGG">
+          <h1>Delivery Policy</h1>
+        </div>
+        <div class="faqText">
+          <ul>
+            <li>
+              <strong>Delivery Time:</strong>
+              Standard delivery typically takes 7-21 business days, depending on
+              the destination and customs clearance procedures. For expedited
+              delivery, our express service ensures packages reach their
+              destination within 3-7 business days.
+            </li>
+            <li>
+              <strong>Shipping Costs:</strong>
+              Shipping costs are calculated based on the destination country,
+              package weight, and selected shipping method. Our transparent
+              pricing ensures you receive competitive rates for your
+              international shipments.
+            </li>
+            <li>
+              <strong>Customs & Duties:</strong>
+              Please note that recipients are responsible for any customs
+              duties, taxes, or import fees imposed by the destination country's
+              customs authorities. We recommend familiarizing yourself with your
+              local customs regulations to avoid any unexpected charges upon
+              delivery.
+            </li>
+            <li>
+              <strong>Customer Support:</strong>
+              Our dedicated customer support team is available to assist you
+              with any inquiries or concerns regarding your international
+              shipment. Feel free to reach out to us for personalized assistance
+              or further information about our delivery services.
+            </li>
+          </ul>
+        </div>
+        <button class="scroll-top-btn" onclick="scrollToTop()">
+          Back to Top
+        </button>
+      </section>
+
+      <section id="f3">
+        <div class="faqGG">
+          <h1>Return Policy</h1>
+        </div>
+        <div class="faqText">
+          <ul>
+            <li>
+              <strong>Returns </strong>
+              You have 30 calendar days to return an item from the date you
+              received it. To be eligible for a return, your item must be unused
+              and in the same condition that you received it. Your item must be
+              in the original packaging. If opened package you cant get a
+              refund, rip if you open it.
+            </li>
+            <li>
+              <strong>Refunds </strong>
+              Once we receive your item, we will inspect it and notify you that
+              we have received your returned item. We will immediately notify
+              you on the status of your refund after inspecting the item. If
+              your return is approved, we will initiate a refund to your
+              original method of payment. You will receive your money back to
+              you in a doge coin wallet adress
+            </li>
+            <li>
+              <strong>Shipping</strong>
+              You gotta pay for the shipping for the return of the item, we are
+              not cool like that. If you receive a refund, the cost of return
+              shipping will be deducted from your refund.
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="f4">
+        <div class="faqGG">
+          <h1>Payment</h1>
+        </div>
+        <div class="faqText">
+          <ul>
+            <li>
+              <strong>Payments</strong>
+              Your payment will be processed at the time of checkout. For credit
+              card and debit card payments, you will be prompted to enter your
+              payment information securely through our payment gateway. For
+              online payment services, you will be redirected to the respective
+              platform to complete the transaction.
+            </li>
+            <li>
+              <strong>Security</strong>
+              We take the security of your payment information seriously. Our
+              website uses SSL encryption to protect your personal and payment
+              information during transmission. We do not store your credit card
+              information on our servers after the transaction is complete.
+            </li>
+            <li>
+              <strong>Payment Issues</strong>
+              If you encounter any issues with your payment or if you have any
+              questions regarding billing, please contact our customer service
+              team immediately at the form. We are here to assist you and
+              resolve any payment-related concerns promptly.
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="f5">
+        <div class="faqGG">
+          <h1>Shipping</h1>
+        </div>
+        <div class="faqText">
+          <ul>
+            <li>
+              <strong>Shipping Methods</strong>
+              We offer Standard Shipping with an estimated delivery in 3-7
+              business days, Expedited Shipping for faster delivery with
+              additional fees, and International Shipping to select countries
+              with varying rates and times.
+            </li>
+            <li>
+              <strong>Order Processing</strong>
+              Orders are typically processed and shipped within 1 business day
+              after payment verification, excluding weekends and holidays.
+            </li>
+            <li>
+              <strong>Shipping rates</strong>
+              Domestic shipping rates are calculated based on package weight and
+              shipping method. International shipping rates vary by destination,
+              and customers may be responsible for customs duties or taxes.
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <script src="service.js"></script>
+  </body>
+</html>
