@@ -6,6 +6,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0px;
     height: 100vh;
+    overflow-x: hidden;
 }
 
 * {
@@ -61,4 +62,28 @@ hr {
 
 ul li {
     list-style-type: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 280vh;
+    gap: 15vh;
+}
+
+.info button {
+    padding: 0.6em;
+    font-size: 1.3em;
+    background: transparent;
+    font-weight: 900;
+    border: 3px solid black;
+    border-radius: 5px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.info button:hover {
+    transform: scale(1.2);
 }

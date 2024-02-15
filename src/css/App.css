@@ -39,6 +39,7 @@
     padding: 5px;
     border: 1px solid black; 
     font-size: 1em;
+    background: white;
 }
 
 .item {
@@ -49,4 +50,35 @@
 .item:hover {
     text-decoration: underline;
     transform: scale(1.05);
+}
+
+.front-image {
+    width: 60vw;
+}
+
+.top {
+    margin-top: 5%;
+    width: 80vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.front-image {
+    object-fit: contain;
+    object-position: 30% 30%;
+}
+
+.info {
+    position: absolute;
+}
+
+.info {
+    margin-bottom: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
 }
