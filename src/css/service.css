@@ -67,37 +67,34 @@ a {
 hr {
   width: 90%;
 }
-
+/*Tar bort den svarta linjen run om min form*/
 fieldset {
   border: none;
   padding: 0px;
 }
-
+/*En enkel margin*/
 label {
-  display: block;
   margin-bottom: 5px;
 }
 
 /*Style till knappen och själva formen.*/
 
 input[type="text"],
-input[type="tel"] {
+input[type="email"] {
   width: 100%;
   padding: 8px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
-input[type="Msg"]{
-    width: 100%;
-    height: 10vh;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
 
-
+textarea {
+  resize: none;
+  border-color: #ccc;
+  border-radius: 5px;
+  padding: 8px;
+  width: 100%;
 }
-
 
 button {
   padding: 10px 20px;
@@ -106,15 +103,15 @@ button {
     #a67c00 0%,
     #ffbf00 30%,
     #ffdc73 35%,
-    #ffbf00 45%,
     #ffbf00 70%,
-    #a67c00 100%
+    #ffbf00 0%,
+    #a67c00 1000%
   );
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
- /* STyle och hover effekt till anchors*/
+/* Style och hover effekt till anchors*/
 a:hover {
   color: #ffa500;
 }
@@ -122,21 +119,79 @@ a:hover {
 .centerbox {
   display: flex;
   justify-content: center;
-  border: solid var(--black) 1px;
+  border: solid black 1px;
   border-radius: 5px;
   padding: 20px;
   margin: 20px auto;
   max-width: 45vw;
 }
+
+/*En fin liten container som det ligger sqaures i med flex center så att de är i mitten*/
+.faq-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/*Utessendet på själva sqauren,*/
+.faq {
+  font-size: 1.2em;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.faq:hover {
+  background-color: #000000;
+}
+/* Tar bort den fula linjen under anchors. */
+a {
+  text-decoration: none;
+}
+
+/* Style for the delivery facts section */
+.faqGG {
+  display: flex;
+  justify-content: center;
+}
+.faqText {
+  display: flex;
+  justify-content: center;
+  margin-left: 25vw;
+  margin-right: 25vw;
+}
+
+li {
+  margin-top: 2vh;
+}
+
+.scroll-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ffbf00;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+.scroll-top-show {
+  display: block; /* Show the button when needed */
+}
+
 /*Responsivitet*/
 @media screen and (max-width: 790px) {
   .centerbox {
     max-width: 90vw;
   }
+  .faqText {
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
 }
 @media screen and (max-width: 320px) {
-    .centerbox {
-      max-width: 90vw;
-    }
+  .centerbox {
+    max-width: 90vw;
   }
-  
+}
