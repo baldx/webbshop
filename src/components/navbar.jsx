@@ -44,15 +44,7 @@ export default function NavBarItems () {
     const handleMouseLeave = () => {
         setShowSubcategories(null);
     };
-    	
-
-    const displayItems = () => {
-        return (
-            <>
-
-            </>
-        )
-    }
+    
 
     return (
         <>
@@ -65,9 +57,9 @@ export default function NavBarItems () {
                 >
                     <h2>{category.name}</h2>
                     {showSubcategories === category.name && (
-                        <div style={{ position: 'absolute', top: '100%', left: 0, backgroundColor: 'white', padding: '5px', border: '1px solid #ccc' }}>
+                        <div className="category-item">
                             {category.items.map(item => (
-                                <div key={item}>{item}</div>
+                                <div key={item} className="item">{item}</div>
                             ))}
                         </div>
                     )}
