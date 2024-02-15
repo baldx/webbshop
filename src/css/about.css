@@ -99,10 +99,12 @@ span {
 }
 
 .funFacts{
-    background-color: gainsboro;
+    padding-top: 1%;
+    background-color: #FAF9F6;
     margin-top:7%;
     height: 40vh;
     width: 100vw;
+    border: 8px;
 }
 
 .factsHeader{
@@ -118,4 +120,9 @@ span {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+}
+
+.factImages{
+    width: 500px;
+    height: 300px;
 }
