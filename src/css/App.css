@@ -15,7 +15,6 @@
 .logo {
     width: 100px;
     height: 80%;
-    background: blue;
 }
 
 .category-name {
@@ -81,4 +80,43 @@
     align-items: center;
     justify-content: center;
     font-weight: 900;
+}
+
+.ig {
+    height: 2em;
+}
+
+.link-section {
+    display: flex;
+}
+
+.credit-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.credit-contributors {
+    font-size: 2em;
+}
+
+.link-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.link-container a {
+    display: flex;
+    justify-content: center;
+}
+
+.left-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    font-size: 2em;
+    font-weight: 700;
 }

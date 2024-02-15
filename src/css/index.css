@@ -87,3 +87,19 @@ main {
 .info button:hover {
     transform: scale(1.2);
 }
+
+footer {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3em;
+}
+
+footer img {
+    object-fit: contain;
+    transition: all 0.3s;
+}
+
+footer img:hover {
+    transform: scale(1.3);
+}
