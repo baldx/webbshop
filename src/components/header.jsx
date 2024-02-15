@@ -2,7 +2,7 @@ export default function Header() {
   return (
     <>
       <div className="left">
-        <img src="" alt="" className="logo" />
+        <img src="./src/assets/JewelryLogo.png" alt="" className="logo" />
         <div className="title-logo">Divine Desires</div>
       </div>
       <div className="right">
