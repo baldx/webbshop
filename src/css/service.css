@@ -141,7 +141,7 @@ a:hover {
 }
 
 .faq:hover {
-  background-color: #000000;
+  background-color: black;
 }
 /* Tar bort den fula linjen under anchors. */
 a {
@@ -169,7 +169,7 @@ li {
   bottom: 20px;
   right: 20px;
   background-color: #ffbf00;
-  color: #000000;
+  color: black;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -177,8 +177,29 @@ li {
 }
 
 .scroll-top-show {
-  display: block; /* Show the button when needed */
+  display: block; /* Visar bara kanppen när den behövs */
 }
+
+.mapbackground {
+  width: 100vw;
+  height: 50vh;
+  background-color: #ccc;
+}
+
+.information{
+  height: 50vh;
+  display: flex;
+  justify-content: first baseline;
+}
+
+.information img{
+  height: 100% ;
+  padding: 8px;
+  width: 50vw;
+}
+
+
+
 
 /*Responsivitet*/
 @media screen and (max-width: 790px) {
