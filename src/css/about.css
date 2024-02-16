@@ -186,7 +186,6 @@ footer {
     width: 100vw;
     display: flex;
     justify-content: space-between;
-    padding: 0 3em;
 }
 
 footer img {
@@ -209,6 +208,7 @@ footer img:hover {
 .credit-right {
     display: flex;
     flex-direction: column;
+    margin-right: 2%;
 }
 
 .credit-contributors {
@@ -236,5 +236,4 @@ footer img:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 10em;
 }
