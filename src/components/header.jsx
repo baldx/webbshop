@@ -1,4 +1,4 @@
-export default function Header() {
+  export default function Header() {
   return (
     <>
       <div className="left">
@@ -6,8 +6,8 @@ export default function Header() {
         <div className="title-logo">Divine Desires</div>
       </div>
       <div className="right">
-        <a href="#">About Us</a>
-        <a href="#">Contact</a>
+        <a href="about.html">About Us</a>
+        <a href="service.html">Contact</a>
       </div>
     </>
   );

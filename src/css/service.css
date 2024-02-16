@@ -44,6 +44,9 @@ header {
   font-size: 1.6em;
   font-weight: 700;
 }
+.right {
+  margin-right: 1em;
+}
 
 a {
   color: var(--black);
@@ -61,7 +64,6 @@ a {
 .logo {
   width: 100px;
   height: 80%;
-  background: blue;
 }
 
 hr {
@@ -183,23 +185,25 @@ li {
 .mapbackground {
   width: 100vw;
   height: 50vh;
-  background-color: #ccc;
+  background-color: #faf9f6;
 }
 
-.information{
+.information {
   height: 50vh;
   display: flex;
   justify-content: first baseline;
 }
 
-.information img{
-  height: 100% ;
+.information img {
+  height: 100%;
   padding: 8px;
   width: 50vw;
+  object-fit: contain;
 }
 
-
-
+img {
+  object-fit: contain;
+}
 
 /*Responsivitet*/
 @media screen and (max-width: 790px) {
@@ -210,9 +214,31 @@ li {
     margin-left: 10vw;
     margin-right: 10vw;
   }
+  .information img {
+    width: 50vw;
+  }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 390px) {
   .centerbox {
     max-width: 90vw;
+  }
+  .information {
+    max-width: 90vw;
+  }
+  .faqText {
+    max-width: 100vw;
+  }
+  h1 {
+    max-width: 90vw;
+  }
+  li {
+    max-width: 90vw;
+  }
+  .right{
+    width: 90vw;
+    margin-right: 0px;
+  }
+  div{
+    margin-right: ;
   }
 }

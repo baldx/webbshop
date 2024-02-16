@@ -34,6 +34,7 @@
 .category-item {
     position: absolute;
     top: 100%;
+    z-index: 1000;
     left: 0;
     padding: 5px;
     border: 1px solid black; 
