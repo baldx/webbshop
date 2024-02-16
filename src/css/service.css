@@ -191,9 +191,13 @@ li {
 .information {
   height: 50vh;
   display: flex;
-  justify-content: first baseline;
-}
+  justify-content: baseline;
+  border-radius: 5px;
 
+}
+img{
+  border-radius: 10px;
+}
 .information img {
   height: 100%;
   padding: 8px;
