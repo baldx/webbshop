@@ -212,6 +212,11 @@ li {
 }
 
 
+a.faq{
+  padding: 90px;
+}
+
+
 /*Responsivitet*/
 @media screen and (max-width: 790px) {
   .centerbox {
