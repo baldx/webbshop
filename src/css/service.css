@@ -201,9 +201,16 @@ li {
   object-fit: contain;
 }
 
-img {
+
+.front-image{
+  width: 100vw;
   object-fit: contain;
 }
+
+.image-bg{
+  margin-bottom: 1vh;
+}
+
 
 /*Responsivitet*/
 @media screen and (max-width: 790px) {
@@ -237,8 +244,5 @@ img {
   .right{
     width: 90vw;
     margin-right: 0px;
-  }
-  div{
-    margin-right: ;
   }
 }
